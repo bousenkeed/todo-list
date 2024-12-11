@@ -1,0 +1,23 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.2s;
+
+    &:active {
+        transform: translateY(2px);
+    }
+}
+
+.primary {
+    background-color: rgb(255, 221, 0);
+
+    &:hover {
+        background-color: rgb(253, 253, 74);
+    }
+}

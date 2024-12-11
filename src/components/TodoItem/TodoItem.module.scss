@@ -1,0 +1,61 @@
+.todoItem {
+    font-size: 16px;
+    padding: 10px 15px;
+    border: 1px solid #ededed;
+    border-radius: 10px;
+    background-color: white;
+    transition: transform 0.4s ease-in-out, opacity 0.4s;
+
+    &.complited {
+        background-color: #919191;
+    }
+
+    &.complited p {
+        color: white;
+        text-decoration: line-through;
+    }
+
+    &.deleting {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 15px;
+    }
+
+    & button {
+        &.complited {
+            background-color: #737373;
+            transition: none;
+        }
+    }
+
+    &__checkButton {
+        background-color: #adff2f;
+        
+        &:hover {
+            background-color: #cfff89;
+        }
+
+        & svg {
+            fill: white;
+        }
+    }
+
+    &__deleteButton {
+        background-color: crimson;
+        color: white;
+
+        &:hover {
+            background-color: rgb(240, 102, 129);
+        }
+    }
+}

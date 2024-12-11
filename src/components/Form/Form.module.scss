@@ -1,0 +1,10 @@
+.form {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 50px;
+
+    &__input {
+        flex-grow: 1;
+    }
+}
